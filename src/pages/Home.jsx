@@ -17,6 +17,26 @@ export default function Home() {
     <>
       <Hero />
 
+      <section className="section about-teaser-section">
+        <motion.div
+          className="about-teaser"
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: EASE }}
+        >
+          <img src={IMAGES.aboutBanner} alt="" loading="lazy" />
+          <div className="about-teaser-content">
+            <span className="section-eyebrow">{ABOUT.eyebrow}</span>
+            <h2 className="section-heading">{ABOUT.heading}</h2>
+            <p className="body-text">{ABOUT.paragraphs[0]}</p>
+            <Link to="/about" className="btn-secondary">
+              {ABOUT.eyebrow}
+            </Link>
+          </div>
+        </motion.div>
+      </section>
+
       <section className="section teaser-section">
         <div className="teaser-grid">
           {TEASERS.map((teaser, i) => (
@@ -38,26 +58,6 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
-
-      <section className="section about-teaser-section">
-        <motion.div
-          className="about-teaser"
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.7, ease: EASE }}
-        >
-          <img src={IMAGES.aboutBanner} alt="" loading="lazy" />
-          <div className="about-teaser-content">
-            <span className="section-eyebrow">{ABOUT.eyebrow}</span>
-            <h2 className="section-heading">{ABOUT.heading}</h2>
-            <p className="body-text">{ABOUT.paragraphs[0]}</p>
-            <Link to="/about" className="btn-secondary">
-              {ABOUT.eyebrow}
-            </Link>
-          </div>
-        </motion.div>
       </section>
 
       <section className="cta-strip">
