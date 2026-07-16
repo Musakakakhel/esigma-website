@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 import { LogoMark } from "./LogoMark";
-import { BRAND, NAV_LINKS, ADDRESS } from "../content";
+import { BRAND, NAV_LINKS, ADDRESS, EMAIL } from "../content";
 
 export function SiteFooter() {
   return (
@@ -16,6 +16,10 @@ export function SiteFooter() {
             <MapPin size={14} strokeWidth={2} />
             <span>{ADDRESS}</span>
           </div>
+          <a href={`mailto:${EMAIL}`} className="footer-address footer-email">
+            <Mail size={14} strokeWidth={2} />
+            <span>{EMAIL}</span>
+          </a>
         </div>
 
         <nav className="footer-nav">

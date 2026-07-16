@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Hero } from "../components/Hero";
+import { Stats } from "../components/Stats";
 import { ABOUT, SERVICES_SECTION, TECHNOLOGY_SECTION, WHY_US_SECTION, CTA, IMAGES } from "../content";
 
 const EASE = [0.16, 1, 0.3, 1];
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Stats />
 
       <section className="section about-teaser-section">
         <motion.div

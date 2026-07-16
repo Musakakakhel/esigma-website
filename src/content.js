@@ -2,6 +2,12 @@ export const BRAND = "Esigma";
 
 export const ADDRESS = "3300 Dallas Parkway, Plano, TX 75093 USA";
 
+export const EMAIL = "info@esigmatech.com";
+
+// See GOOGLE_SHEETS_SETUP.md in the project root for setup details.
+export const GOOGLE_SHEET_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbySA1ug_fJNO9UlSERUcftle4SwVrGk_jt2yLNmVMFe_8NEUUCJvI36xFY2XzjatvVcpQ/exec";
+
 export const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
@@ -30,6 +36,28 @@ export const IMAGES = {
     "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=800&auto=format&fit=crop",
   homeWhyUsTeaser:
     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+};
+
+export const STATS = [
+  { value: "100+", label: "Network Audits" },
+  { value: "200+", label: "Telecom Experts" },
+  { value: "60+", label: "Operators & Vendors" },
+  { value: "20+", label: "Countries Covered" },
+  { value: "2G-5G", label: "Multi-Technology Experience" },
+];
+
+export const INDUSTRIES = {
+  heading: "Industries We Serve",
+  items: [
+    "Telecom",
+    "Private Wireless",
+    "Enterprise",
+    "Government",
+    "Airports",
+    "Healthcare",
+    "Education",
+    "Hospitality",
+  ],
 };
 
 export const HERO = {
@@ -231,13 +259,14 @@ export const TECHNOLOGY = [
     title: "NetField360 Workflow Management",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
     description:
-      "An automated drive-testing and field-workflow platform designed to improve data quality, visibility and delivery speed.",
+      "Esigma's flagship field data intelligence and automation platform for wireless networks, converting raw field data into structured, per-test insights that support planning, optimization, acceptance and compliance workflows.",
     items: [
       "AI-based route planning",
-      "Real-time KPI monitoring",
-      "Automated log uploads",
-      "Built-in sanity checks",
-      "Grid-based testing",
+      "Grid-based testing and assignment",
+      "Automated validation and pass/fail classification",
+      "Multi-technology support (5G NR, LTE, UMTS)",
+      "Real-time KPI monitoring and vehicle tracking",
+      "Automated log uploads and sanity checks",
       "Automated reporting",
       "Reduced operational cost",
     ],
@@ -264,16 +293,16 @@ export const TECHNOLOGY = [
     title: "Rollout Workflow Management",
     image: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?q=80&w=1600&auto=format&fit=crop",
     description:
-      "A centralized solution for managing network rollout activities from planning through final acceptance.",
+      "A unified, intelligent platform engineered to orchestrate end-to-end network rollout operations, from workflow initiation to final SLA reporting, across multi-vendor, multi-network environments.",
     items: [
-      "Milestone tracking",
-      "SLA monitoring",
-      "Site progress visibility",
-      "SAP integration",
-      "Inventory management",
-      "Resource control",
-      "Invoice automation",
-      "Closeout management",
+      "Multi-vendor, multi-network management",
+      "Milestone tracking and SLA monitoring",
+      "Geographical site visualization",
+      "Smart workflow engine with automated escalation",
+      "BoM and inventory management with SAP integration",
+      "Milestone-linked invoice automation",
+      "Change management workflows",
+      "Real-time dashboards and reporting",
     ],
   },
   {
@@ -285,11 +314,11 @@ export const TECHNOLOGY = [
       "Remote test control",
       "Script and cell-file distribution",
       "Band, PCI and technology locking",
+      "No cables or external battery required",
       "Automatic log upload",
       "Real-time go/no-go decisions",
       "Automated post-processing",
       "Customized report generation",
-      "Email distribution",
     ],
   },
 ];
